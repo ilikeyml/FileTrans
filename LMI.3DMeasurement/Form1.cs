@@ -19,7 +19,7 @@ namespace LMI._3DMeasurement
         {
             InitializeComponent();
         }
-
+        
         private void buttonGrab_Click(object sender, EventArgs e)
         {
 
@@ -30,8 +30,8 @@ namespace LMI._3DMeasurement
             hWindow.DispImage(hImage);
 
             FitLineTool fitLineTool = new FitLineTool(hImage);
-            fitLineTool.CallSettingForm();
-          
+            //fitLineTool.CallSettingForm();
+            fitLineTool.toolRun();
         }
         HWindow hWindow;
         HTuple winWidth;
